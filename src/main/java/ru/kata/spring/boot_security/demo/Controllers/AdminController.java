@@ -14,12 +14,10 @@ public class AdminController {
 
     private final UserService userService;
 
-
     public AdminController(UserService userService) {
         this.userService = userService;
 
     }
-
 
     @GetMapping()
     public String userList(Model model, Principal principal) {
@@ -33,7 +31,6 @@ public class AdminController {
         userService.deleteUser(id);
         return "redirect:/admin";
     }
-
 
     @GetMapping("/create")
     public String creatUserForm(Model model) {
@@ -64,6 +61,5 @@ public class AdminController {
         userService.updateUser(user);
         return "redirect:/admin";
     }
-
 
 }

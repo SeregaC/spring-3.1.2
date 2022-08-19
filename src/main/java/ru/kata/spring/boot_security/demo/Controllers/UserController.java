@@ -15,7 +15,6 @@ import java.security.Principal;
 public class UserController {
     private final UserService userService;
 
-
     @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
@@ -35,6 +34,5 @@ public class UserController {
         model.addAttribute("user", userService.findUserById(id));
         return "/user";
     }
-
 
 }

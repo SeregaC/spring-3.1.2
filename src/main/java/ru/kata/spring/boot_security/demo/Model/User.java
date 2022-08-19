@@ -46,7 +46,6 @@ public class User implements UserDetails {
     public User() {
     }
 
-
     @Override
     public boolean isAccountNonExpired() {
         return true;
@@ -73,7 +72,6 @@ public class User implements UserDetails {
 
         return getRoles();
     }
-
 
     @Override
     public String getPassword() {

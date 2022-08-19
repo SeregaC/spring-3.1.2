@@ -94,6 +94,7 @@ public class UserServiceImpl implements UserService {
         }
         return false;
     }
+
     @Override
     @Transactional
     public List<Role> listRoles() {
