@@ -10,7 +10,6 @@ import java.util.Set;
 @Data
 @Table(name = "roles")
 public class Role implements GrantedAuthority {
-
     @Id
     private Long id;
     @Column(name = "name")
