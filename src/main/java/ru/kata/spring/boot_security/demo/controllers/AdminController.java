@@ -1,10 +1,10 @@
-package ru.kata.spring.boot_security.demo.Controllers;
+package ru.kata.spring.boot_security.demo.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import ru.kata.spring.boot_security.demo.Model.User;
-import ru.kata.spring.boot_security.demo.Service.UserService;
+import ru.kata.spring.boot_security.demo.model.User;
+import ru.kata.spring.boot_security.demo.service.UserService;
 
 import java.security.Principal;
 
